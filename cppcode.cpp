@@ -1,1 +1,1 @@
-int main () { char a = 'a'; return 0; }
+int main() { return 0; }
