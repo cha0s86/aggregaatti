@@ -27,11 +27,10 @@ int main() {
     std::cout << "Pistetään koodit polttomoottoriin!" << std::endl;
     polttomoottori.rusticcode = "integer main() { decimal a = 0; return 0; }";
 
-    // Polttomoottori
-    // Write c++ code to a file
-    ofstream cppfile("rusticcode.rustic");  // Create and open a text file
-    cppfile << polttomoottori.rusticcode;   //write to the file
-    cppfile.close();                        // Close the file
+    // create cpp file
+    std::fstream rusticcfile("rusticcode.rustic");
+    rusticcfile << polttomoottori.rusticcode;
+    rusticcfile.close();
 
     // Generaattori
     // Polttoaine (rusticcode.rustic) -> Mekaaninen energia (c++) (program.cpp)...
